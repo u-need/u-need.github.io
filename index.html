@@ -5,13 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <title>UNeed | Needful things</title>
+  <title>UNeed | needful things</title>
   
   <!-- Bootstrap -->
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/font-awesome.css">
   <link rel="stylesheet" href="style.css">
-  <link href="images/logo.jpg" rel="icon" sizes="" type="image/jpg">
+  <link href="images/favicon.png" rel="icon" sizes="" type="image/png">
   <script type="text/javascript" src="jquery/jquery-1.11.3.js"></script>
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
@@ -36,186 +36,319 @@
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>             </button>
-      <a class="navbar-brand" id="logo" href="#"><b>UNeed</b><p id="motto">Needful things</p></a>
+        <span class="icon-bar"></span>           
+      </button>
+      <a class="navbar-brand" href="index.html" id="logo" title="UNeed"><img src="images/logo.png" alt="Logo" class="img-responsive"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home"><i class="fa fa-home fa-lg" aria-hidden="true"></i></a></li>
         <li class="dropdown">
-          <a href="#home"><i class="fa fa-home fa-lg" aria-hidden="true"></i> Головна<span class="caret"></span>
-        </a>
-          <ul class="dropdown-menu" style="width:10px">
-            <li><a href="culture.html">Culture</a></li>
-            <li><a href="css-intro.html">Культура</a></li>
-            <li><a href="js-intro.html">Мистецтво</a></li>
-            <li class="divider"></li>
-            <li><a href="sql-intro.html">SQL</a></li>
-            <li><a href="bootstrap-intro.html">Bootstrap</a></li>
-            <li><a href="jquery-intro.html">jQuery</a></li> 
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#advertisement">Оголошення <span class="caret"></span>
-          </a>
-            <ul class="dropdown-menu" style="width:10px">
-            <li><a href="html-intro.html">Спорт</a></li>
-            <li><a href="css-intro.html">Культура</a></li>
-            <li><a href="js-intro.html">Мистецтво</a></li>
-            <li class="divider"></li>
-            <li><a href="sql-intro.html">SQL</a></li>
-            <li><a href="bootstrap-intro.html">Bootstrap</a></li>
-            <li><a href="jquery-intro.html">jQuery</a></li> 
+          <a href="#articles">Статті<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#business">Бізнес</a></li>
+            <li><a href="#society">Соціум</a></li>
+            <li><a href="#art">Мистецтво</a></li>
+            <li><a href="#culture">Культура</a></li>
+            <li><a href="#sport">Спорт</a></li>
+            <li><a href="#interesting">Це цікаво</a></li> 
           </ul>
           </li>
-        <li><a href="#blog">Блог</a></li>
-        <li><a href="#shop">HandMade shop</a></li>
+        <li class="dropdown">
+          <a href="#service">Послуги<span><span class="caret"></span></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#business-style">Фірмовий стиль</a></li>
+            <li><a href="#websites">Web-сайти</a></li>
+            <li><a href="#motto">Слоган / Moтто</a></li>
+            <li><a href="#copywriting">Копірайтинг</a></li>
+          </ul>
+          </li>
+        <li class="dropdown">
+          <a href="#ads">Реклама<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#sub-ads">Реклама</a></li>
+            <li><a href="#avertisement">Оголошення</a></li>
+          </ul>
+          </li>
+        <li><a href="#handmade">HandMade</a></li>
+        <li><a href="#blog">Блог автора</a></li>
+        <li class="dropdown">
+          <a href="#about-us">Про проект<span><span class="caret"></span></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#about-project">Про нас</a></li>
+            <li><a href="#our-worsk">Наші роботи</a></li>
+          </ul>
+          </li>
         <li><a href="#contact">Контакти</a></li>
       </ul>
     </div>
   </div>
 </nav>
+<!--
+  <nav class="navbar navbar-inverse navbar-static-top example6">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar6">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand text-hide" href="http://disputebills.com">Brand Text
+        </a>
+      </div>
+      <div id="navbar6" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li class="dropdown-header">Nav header</li>
+              <li><a href="#">Separated link</a></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+-->
 
 <!-- First Container (Home) -->
 <div class="container bg-1 text-center page-scroll" id="home">
 <br><br><br>
+  <div class="jumbotron col-md-12">
+    <div class="col-md-4">
+      <img src="images/question-man.png" class="img-responsive" alt="Image" width="400" height="300" style="width:200px;height:180px;">
+    </div>
+    <div class="col-md-4">
+      <h1 id="jumbotronHeading">WHO LOST THE CAT? :-)</h1>
+    </div>
+    <div class="col-md-4">
+      <img src="images/cat.png" class="img-responsive" alt="Image" width="400" height="300" style="width:200px;height:180px;">
+    </div>
+  </div> 
+</div>
+
+<!-- Second Container (Articles) -->
+<div class="container bg-2 page-scroll" id="articles">
+  <h1 class="text-center font-block">Статті</h1>
+  <br>
   <div class="row masonry" data-columns>
         <div class="item">
           <div class="thumbnail">
-              <img src="http://placehold.it/100x50" class="img-responsive" alt="Image" width="400" height="300">
-            <div class="caption">
-              <p><span class="glyphicon glyphicon-time"></span> 12/02/2016</p>
-              <h3> <a href="pyat-rechej-pro-html-5.html">П'ять речей що ти повинен знати про HTML5</a></h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde nulla est, consequatur laborum beatae modi fuga quia ipsum placeat nihil.</p>
-              <a href="pyat-rechej-pro-html-5.html" class="btn btn-success">Деталі <i class="fa fa-arrow-right"></i></a>
+              <img src="images/business.png" class="img-responsive" alt="Image" width="400" height="300" style="width:200px;height:180px">
+            <div class="caption text-center">
+              <h2><a href="#business"><b>Бізнес</b></a></h2>
             </div>
           </div> 
         </div>
         <div class="item">
           <div class="thumbnail">
-              <img src="http://placehold.it/100x50" class="img-responsive" alt="Image" width="400" height="300">
-            <div class="caption">
-              <p><span class="glyphicon glyphicon-time"></span> 10 Лютого, 2016</p>
-              <h3> <a href="benjamin-franklin-13-virtues.html">Бенджамін Франклін 13 чеснот</a></h3>
-              <p>Чи знаєте Ви що в 1726 році, у віці 20 років, під час 80-ти денного вояжу з Лондона до Філадельфії Бенджамін Франклін розробив "план" для регулювання свого майбутнього життя.</p>
-              <a href="benjamin-franklin-13-virtues.html" class="btn btn-success">Деталі <i class="fa fa-arrow-right"></i></a>
+              <img src="images/society.png" class="img-responsive" alt="Image" width="400" height="300" style="width:200px;height:180px">
+            <div class="caption text-center">
+              <h2><a href="benjamin-franklin-13-virtues.html"><b>Соціум</b></a></h2>
             </div>
           </div> 
         </div>
         <div class="item">
           <div class="thumbnail">
-              <img src="http://placehold.it/100x50" class="img-responsive" alt="Image" width="400" height="300">
-            <div class="caption">
-              <p><span class="glyphicon glyphicon-time"></span> Fab 10, 2016, at 15:52 pm</p>
-              <h3> <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing.</a></h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde nulla est, consequatur laborum beatae modi fuga quia ipsum placeat nihil.</p>
-              <a href="#" class="btn btn-success">Деталі <i class="fa fa-arrow-right"></i></a>
+              <img src="images/painter-new.png" class="img-responsive" alt="Image" width="400" height="300" style="width:200px;height:180px">
+            <div class="caption text-center">
+              <h2><a href="benjamin-franklin-13-virtues.html"><b>Мистецтво</b></a></h2>
             </div>
           </div> 
         </div>
         <div class="item">
           <div class="thumbnail">
-              <img src="http://placehold.it/100x50" class="img-responsive" alt="Image" width="400" height="300">
-            <div class="caption">
-              <p><span class="glyphicon glyphicon-time"></span> 12/02/2016</p>
-              <h3> <a href="pyat-rechej-pro-html-5.html">П'ять речей що ти повинен знати про HTML5</a></h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, exercitationem.</p>
-              <a href="pyat-rechej-pro-html-5.html" class="btn btn-success">Більше <i class="fa fa-arrow-right"></i></a>
+              <img src="images/culture.png" class="img-responsive" alt="Image" width="400" height="300" style="width:200px;height:200px">
+            <div class="caption text-center">
+              <h2><a href="benjamin-franklin-13-virtues.html"><b>Культура</b></a></h2>
             </div>
           </div> 
         </div>
         <div class="item">
           <div class="thumbnail">
-              <img src="http://placehold.it/100x50" class="img-responsive" alt="Image" width="400" height="300">
-            <div class="caption">
-              <p><span class="glyphicon glyphicon-time"></span> 12/02/2016</p>
-              <h3> <a href="pyat-rechej-pro-html-5.html">П'ять речей що ти повинен знати про HTML5</a></h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde nulla est, consequatur laborum beatae modi fuga quia ipsum placeat nihil.</p>
-              <a href="pyat-rechej-pro-html-5.html" class="btn btn-success">Деталі <i class="fa fa-arrow-right"></i></a>
+              <img src="images/sport-basketball.png" class="img-responsive" alt="Image" width="400" height="300" style="width:200px;height:200px">
+            <div class="caption text-center">
+              <h2><a href="benjamin-franklin-13-virtues.html"><b>Спорт</b></a></h2>
             </div>
           </div> 
         </div>
         <div class="item">
           <div class="thumbnail">
-              <img src="http://placehold.it/100x50" class="img-responsive" alt="Image" width="400" height="300">
-            <div class="caption">
-              <p><span class="glyphicon glyphicon-time"></span> 12/02/2016</p>
-              <h3> <a href="pyat-rechej-pro-html-5.html">П'ять речей що ти повинен знати про HTML5</a></h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde nulla est, consequatur laborum beatae modi fuga quia ipsum placeat nihil.</p>
-              <a href="pyat-rechej-pro-html-5.html" class="btn btn-success">Деталі <i class="fa fa-arrow-right"></i></a>
+              <img src="images/smart-man.png" class="img-responsive" alt="Image" width="400" height="300" style="width:200px;height:200px">
+            <div class="caption text-center">
+              <h2><a href="benjamin-franklin-13-virtues.html"><b>Це цікаво</b></a></h2>
             </div>
           </div> 
         </div>
-  </div>
+  </div> 
 </div>
 
-<!-- Second Container (Advertisement) -->
-<div class="container bg-2 page-scroll" id="advertisement">
-  <h1 class="text-center">Advertisement</h1>
-    <div class="col-md-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit nam atque officia eveniet velit aut possimus repudiandae fugit reiciendis perferendis.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus ipsa odit non nesciunt voluptatum similique voluptate impedit iste pariatur id?</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, voluptatibus inventore. Totam voluptates et nemo.</p>
-    </div>
-    <div class="col-md-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi aut qui similique numquam eveniet blanditiis, iure fugiat, aspernatur eaque!</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat dolores, aliquid magni recusandae nesciunt mollitia laboriosam saepe repellendus, tempora, numquam nisi dolorem vero, repellat ullam.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, quaerat, in asperiores voluptas neque assumenda, dolor ratione consequuntur sit, maiores deleniti quisquam nihil.</p>
-    </div>
-    <div class="col-md-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, autem!</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo illum, fugit sit ipsum, eum dolorum totam nobis quod modi atque.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni dolores explicabo harum nostrum veniam optio.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum officiis quas pariatur nihil veritatis, suscipit!</p>
-    </div>
-</div>
-
-<!-- Third Container (Blog) -->
-<div class="container bg-3 page-scroll" id="blog">    
-  <h1 class="text-center">Blog</h1>
-  <div>
-    <div class="col-sm-6">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates repellendus exercitationem aperiam culpa commodi sed cum distinctio officiis necessitatibus? Nesciunt distinctio, blanditiis facere pariatur, quo perferendis quasi neque obcaecati unde eius in earum, ipsum aut minus optio quod? Placeat, sit ipsum! Alias, odit, fugiat. Nesciunt vitae unde repellat temporibus deserunt.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ipsam alias, minima. Fugit, esse illum sapiente nulla suscipit provident atque expedita natus tempore veniam. Quo voluptatem blanditiis, nostrum. Necessitatibus harum recusandae amet labore porro fugiat numquam soluta nemo consequuntur voluptate consequatur, incidunt voluptates eaque obcaecati illo natus commodi asperiores eveniet?</p>
-    </div>
-    <div class="col-sm-6">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ipsam alias, minima. Fugit, esse illum sapiente nulla suscipit provident atque expedita natus tempore veniam. Quo voluptatem blanditiis, nostrum. Necessitatibus harum recusandae amet labore porro fugiat numquam soluta nemo consequuntur voluptate consequatur, incidunt voluptates eaque obcaecati illo natus commodi asperiores eveniet?</p> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ipsam alias, minima. Fugit, esse illum sapiente nulla suscipit provident atque expedita natus tempore veniam. Quo voluptatem blanditiis, nostrum. Necessitatibus harum recusandae amet labore porro fugiat numquam soluta nemo consequuntur voluptate consequatur, incidunt voluptates eaque obcaecati illo natus commodi asperiores eveniet?</p>
-    </div>
-  </div>
-</div>
-
-<!-- Forth Container (HandMade Shop) -->
-<div class="container bg-4 text-center page-scrill" id="shop">
-  <h1>HandMade Shop</h1>
-  <div>
+<!-- Third Container (Service) -->
+<div class="container bg-3 page-scroll" id="service">
+  <h1 class="text-center font-block">Послуги</h1>
+  <br>
     <div class="row">
-      <div class="col-sm-4">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <img src="http://placehold.it/400x400" class="img-responsive margin" alt="Image" width="400" height="300">
-      </div>
-      <div class="col-sm-4"> 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <img src="http://placehold.it/400x400" class="img-responsive margin" alt="Image" width="400" height="300">
-      </div>
-      <div class="col-sm-4"> 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <img src="http://placehold.it/400x400"
-      class="img-responsive margin" alt="Image" width="400" height="300">
-      </div>
+      <div class="col-md-3">
+    <div class="item">
+          <div class="thumbnail">
+              <img src="images/business-style.png" class="img-responsive" alt="Image" width="400" height="300" style="width:200px;height:170px">
+            <div class="caption text-center">
+              <h2><a href="#business"><b>Фірмовий стиль</b></a></h2>
+            </div>
+          </div> 
+        </div>
+  </div>
+  <div class="col-md-3">
+    <div class="item">
+          <div class="thumbnail">
+              <img src="images/websites.png" class="img-responsive" alt="Image" width="400" height="300" style="width:200px;height:200px">
+            <div class="caption text-center">
+              <h2><a href="benjamin-franklin-13-virtues.html"><b>Web-сайти</b></a></h2>
+            </div>
+          </div> 
+        </div>
+  </div>
+  <div class="col-md-3">
+    <div class="item">
+          <div class="thumbnail">
+              <img src="images/motto.png" class="img-responsive" alt="Image" width="400" height="300" style="width:200px;height:200px">
+            <div class="caption text-center">
+              <h2><a href="benjamin-franklin-13-virtues.html"><b>Слоган/Мотто</b></a></h2>
+            </div>
+          </div> 
+        </div>
+  </div>
+  <div class="col-md-3">
+    <div class="item">
+          <div class="thumbnail">
+              <img src="images/copywriting.png" class="img-responsive" alt="Image" width="400" height="300" style="width:200px;height:200px">
+            <div class="caption text-center">
+              <h2><a href="benjamin-franklin-13-virtues.html"><b>Копірайтинг</b></a></h2>
+            </div>
+          </div> 
+        </div>
+  </div>
     </div>
   </div>
+
+<!-- Fourth Container (Ads) -->
+<div class="container bg-4 page-scroll" id="ads">    
+  <h1 class="text-center font-block">Реклама</h1>
+  <br>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="item">
+        <div class="thumbnail">
+          <img src="images/ads.png" class="img-responsive" alt="Image" width="400" height="300" style="width:200px;height:200px">
+          <div class="caption text-center">
+            <h2><a href="benjamin-franklin-13-virtues.html"><b>Реклама</b></a></h2>
+          </div>
+        </div> 
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="item">
+        <div class="item sub-menu">
+        <div class="thumbnail">
+          <img src="images/advertisement.png" class="img-responsive" alt="Image" width="400" height="300" style="width:200px;height:200px">
+          <div class="caption text-center">
+            <h2><a href="benjamin-franklin-13-virtues.html"><b>Оголошення</b></a></h2>
+          </div>
+        </div> 
+      </div>
+    </div> 
+  </div>
+</div>
 </div>
 
-<!-- Fifth Container (Contacts) -->
-<div class="container bg-5 text-center page-scrill" id="contact">
-  <h1>Contacts</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex eos placeat, error itaque quod, beatae vel illum quaerat veniam aliquid!</p>
-  <p>Repellat laudantium, quis, accusamus ex incidunt, iste quos eveniet, harum delectus eligendi culpa! Quae expedita, voluptates, similique aliquam inventore ratione?</p>
-  <p>contact us on <a href="#">UNeedNeedfulThings@gmail.com</a></p>
-  <p>contact us on <a href="#">vk</a></p>
-  <p>contact us on <a href="#">facebook</a></p>
+<!-- Fifth Container (HandMade) -->
+<div class="container bg-5 text-center page-scrill" id="handmade">
+  <h1 class="text-center font-block">HandMade Shop</h1>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="item">
+        <div class="thumbnail">
+          <img src="images/handmade.png" class="img-responsive" alt="Image" width="400" height="300" style="width:200px;height:200px">
+          <div class="caption text-center">
+            <h2><a href="benjamin-franklin-13-virtues.html"><b>Букети</b> <b>Подарунки</b> <b>Прикраси</b> <b>Інтер'єр</b></a></h2>
+          </div>
+        </div> 
+      </div>
+    </div>  
+  </div> 
+</div>
+
+<!-- Sixth Container (Blog) -->
+<div class="container bg-6 text-center page-scrill" id="blog">
+  <h1 class="text-center font-block">Блог автора</h1>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="item">
+        <div class="thumbnail">
+          <img src="images/blog.png" class="img-responsive" alt="Image" width="400" height="300" style="width:200px;height:200px">
+          <div class="caption text-center">
+            <h2><a href="benjamin-franklin-13-virtues.html"><b>Думки</b> <b>Погляди</b> <b>Рeфлексії</b></a></h2>
+          </div>
+        </div> 
+      </div>
+    </div>  
+  </div> 
+</div>
+
+<!-- Seventh Container (About Us) -->
+<div class="container bg-7 text-center page-scrill" id="about-us">
+  <h1 class="text-center font-block">Про проект</h1>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="item">
+        <div class="thumbnail">
+          <img src="images/about-us.png" class="img-responsive" alt="Image" width="400" height="300" style="width:200px;height:200px">
+          <div class="caption text-center">
+            <h2><a href="benjamin-franklin-13-virtues.html"><b>Про нас</b></a></h2>
+          </div>
+        </div> 
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="item">
+        <div class="thumbnail">
+          <img src="images/our-works2.png" class="img-responsive" alt="Image" width="400" height="300" style="width:200px;height:200px">
+          <div class="caption text-center">
+            <h2><a href="benjamin-franklin-13-virtues.html"><b>Наші роботи</b></a></h2>
+          </div>
+        </div> 
+      </div> 
+    </div>  
+  </div> 
+</div>
+
+<!-- Eighth Container (Contact) -->
+<div class="container bg-8 text-center page-scrill" id="contact">
+  <h1 class="text-center font-block">Контакти</h1>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="item">
+        <div class="thumbnail">
+          <img src="images/contact.png" class="img-responsive" alt="Image" width="400" height="300" style="width:200px;height:200px">
+          <div class="caption text-center">
+            <h2><a href="benjamin-franklin-13-virtues.html"><b>Швидка допомога: ми поруч</b></a></h2>
+          </div>
+        </div> 
+      </div>
+    </div>  
+  </div> 
 </div>
 
 <!-- Anchor -->
@@ -225,7 +358,7 @@
 
 <!-- Footer -->
 <footer class="container-fluid footer text-center">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, a!</p>
+  <p> &copy; 2016 created by UNeed. All Rights Reserved.</p>
 </footer>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
